@@ -52,7 +52,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(8, 66);
+            label2.Location = new Point(8, 94);
             label2.Name = "label2";
             label2.Size = new Size(161, 21);
             label2.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F);
-            label3.Location = new Point(95, 98);
+            label3.Location = new Point(95, 135);
             label3.Name = "label3";
             label3.Size = new Size(65, 21);
             label3.TabIndex = 2;
@@ -70,32 +70,35 @@
             // 
             // fnumbox
             // 
+            fnumbox.Font = new Font("Segoe UI", 12F);
             fnumbox.Location = new Point(178, 12);
             fnumbox.Name = "fnumbox";
-            fnumbox.Size = new Size(192, 23);
+            fnumbox.Size = new Size(192, 29);
             fnumbox.TabIndex = 3;
             // 
             // snumbox
             // 
-            snumbox.Location = new Point(178, 65);
+            snumbox.Font = new Font("Segoe UI", 12F);
+            snumbox.Location = new Point(178, 93);
             snumbox.Name = "snumbox";
-            snumbox.Size = new Size(192, 23);
+            snumbox.Size = new Size(192, 29);
             snumbox.TabIndex = 4;
             // 
             // operationbox
             // 
+            operationbox.Font = new Font("Segoe UI", 12F);
             operationbox.FormattingEnabled = true;
             operationbox.Items.AddRange(new object[] { "+", "-", "*", "/" });
-            operationbox.Location = new Point(211, 39);
+            operationbox.Location = new Point(214, 53);
             operationbox.Name = "operationbox";
-            operationbox.Size = new Size(121, 23);
+            operationbox.Size = new Size(121, 29);
             operationbox.TabIndex = 6;
             // 
             // answertext
             // 
             answertext.AutoSize = true;
             answertext.Font = new Font("Segoe UI", 12F);
-            answertext.Location = new Point(178, 98);
+            answertext.Location = new Point(178, 135);
             answertext.Name = "answertext";
             answertext.Size = new Size(28, 21);
             answertext.TabIndex = 8;
@@ -103,19 +106,20 @@
             // 
             // calculatebtn
             // 
-            calculatebtn.Font = new Font("Segoe UI", 12F);
-            calculatebtn.Location = new Point(230, 137);
+            calculatebtn.Font = new Font("Segoe UI", 14F);
+            calculatebtn.Location = new Point(230, 174);
             calculatebtn.Name = "calculatebtn";
-            calculatebtn.Size = new Size(91, 28);
+            calculatebtn.Size = new Size(105, 34);
             calculatebtn.TabIndex = 9;
             calculatebtn.Text = "Calculate";
             calculatebtn.UseVisualStyleBackColor = true;
+            calculatebtn.Click += calculatebtn_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(389, 228);
             Controls.Add(calculatebtn);
             Controls.Add(answertext);
             Controls.Add(operationbox);
